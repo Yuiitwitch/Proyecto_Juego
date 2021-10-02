@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta Author="Alfonso Lara">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Juego</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- PANTALLA1 -->
+    <section class="vis" id="fase1">
+        <div class="cont1">
+            <div><img class="cursor" onclick='organizer("fase2")' alt="" src="img/hourse_racing2.jpg" /></div>
+        </div>
+    </section>
+    <!-- PANTALLA2 -->
+    <section class="novis" id="fase2" style="display:none">
+        <div class="centrar">
+
+            <div class="cara"><img onclick='chooseHourse("1")' alt="" src="img/coche2.png"></div>
+            <div class="namehourse">Rayo</div>
+
+            <div class="cara"><img onclick='chooseHourse("2")' alt="" src="img/coche2.png" /></div>
+            <div class="namehourse">Veloz</div>
+
+            <div class="cara"><img onclick='chooseHourse("3")' alt="" src="img/coche2.png" /></div>
+            <div class="namehourse">Pecoso</div>
+
+            <div class="cara"><img onclick='chooseHourse("4")' alt="" src="img/coche2.png" /></div>
+            <div class="namehourse">Happy</div>
+        </div>
+        <div class="cara"></div>
+        <div class="h1message"> HOURSE 1<br><br> -SELECT YOUR HOURSE-</div>
+        <div onclick='organizer("fase3")' id="spartida" style="display:none">EMPEZAR PARTIDA</div>
+
+        </div>
+        <!-- PANTALLA 3 -->
+    </section>
+    <section class="novis1" id="fase3" style="display:none">
+        <div><img onClick='organizer("4")' alt="coch4" src="img/coche4.png" /></div>
+
+    </section>
+    <section class="novis2" id="fase4" style="display:none">
+        <div><img onClick='organizer("1")' alt="coch5" src="img/coche5.png" /></div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
