@@ -20,11 +20,7 @@
     <!-- PANTALLA2 -->
     <section class="novis" id="fase2" style="display:none">
         <div class="centrar">
-            <div class="centrar2">
-                <div class="fhourse">
-                    <div class="hup"></div>
                 <div class="hsin">
-                    <div class="cara"></div>
                     <div class="cara"><img onclick='chooseHourse("1")' alt="" src="img/caballo.jpg">
                     <div class="namehourse">Rayo</div>
                 </div>
@@ -37,17 +33,23 @@
                     <div class="cara"><img onclick='chooseHourse("4")' alt="" src="img/caballo.jpg">
                     <div class="namehourse">Happy</div>
                 </div>
-                    <div class="cara"></div>
-                </div>
                 </div>
                 <div class="h1message"><br><br> -SELECT YOUR HOURSE-</div>
-                <div onclick='organizer("fase3")' id="spartida" style="display:none">EMPEZAR PARTIDA</div>
+                <div onclick='organizer("fase3")' class="epartida" id="spartida" style="display:none">EMPEZAR PARTIDA</div>
             </div>
         </div>
         <!-- PANTALLA 3 -->
     </section>
     <section class="novis1" id="fase3" style="display:none">
-        <div><img onClick='organizer("4")' alt="coch4" src="img/coche4.png" /></div>
+        <div><img src="img/caballo.jpg"/>
+        <div>Player1</div>
+        </div>
+        
+        <div><img src="img/caballo.jpg"/>
+        <div>Player2</div>
+        </div>
+        <div><button id="boton">GO!</button></div>
+        
 
     </section>
     <section class="novis2" id="fase4" style="display:none">

@@ -2,52 +2,32 @@ body{
     margin: 0 0 0 0;
 }
 /* PANTALLA1 */
-.centrar{
-    display: flex;
-    justify-content: center;
-    height: 100%;
+.vis{
+    background-color: palegoldenrod;
+     width: 100vw;
+    height: 100vh;
 }
 .cont1{
-        position: relative;
+        height: 100%;
+       display:flex;
+       justify-content: center;
+       align-items: center;
 }
 /*PANTALLA 2 */
-.vis{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.centrar2 {
-    height: 100%;
-    width: 85%;   
-   
-}
-.fhourse {
-    height: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
 .hsin{
-    height: 90%;
-    display: flex;
-}
-.cara{
-    width: 35em;
-    position: relative;
-    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .namehourse{
-    color: orange;
+    font-size: 30px;
     text-align: center;
-    margin-top: 5px;
-    font-size: 35px;
 }
 .h1message{
-    color: orangered;
+    font-size: 40px;
     text-align: center;
-    height: 15%;
-    font-size: 24px;
-   
+}
+.epartida{
+    text-align: center;
+    font-size: 40px;
 }

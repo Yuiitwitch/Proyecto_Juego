@@ -15,10 +15,10 @@ class gameHourse{
     }
 }
 
-let hourse1 = new gameHourse ("Rayo",100,500);
-let hourse2 = new gameHourse ("Veloz",200,600);
-let hourse3 = new gameHourse ("Pecoso",150,550);
-let hourse4 = new gameHourse ("Happy",200,575);
+let hourse1 = new gameHourse ("Rayo",100,30);
+let hourse2 = new gameHourse ("Veloz",100,30);
+let hourse3 = new gameHourse ("Pecoso",100,30);
+let hourse4 = new gameHourse ("Happy",100,30);
 
 let players = [];
 
@@ -46,9 +46,7 @@ const chooseHourse = (caballo) => {
 }
   }
 
-
-
-
+//juego//
 
 
 
