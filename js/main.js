@@ -48,7 +48,12 @@ const chooseHourse = (caballo) => {
 
 //juego//
 
-
+let carrera = 1000;
+let partida= "";
+let player1 = "";
+let player2 = "";
+let win = "Has ganado!";
+let metros= "";
 
 
 organizer = (caballo) => {

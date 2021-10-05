@@ -19,6 +19,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+.cara{
+    border-radius: 15px;
+    border: 2px solid black;
+}
 .namehourse{
     font-size: 30px;
     text-align: center;
@@ -30,4 +34,23 @@ body{
 .epartida{
     text-align: center;
     font-size: 40px;
+}
+/* PANTALLA 3 */
+.gplayers{
+    display:flex;
+    justify-content: center;
+}
+.player1{
+    
+}
+.p1t{
+     text-align: center;
+     font-size: 50px;
+}
+.p2t{
+    text-align: center;
+    font-size: 50px;
+}
+.boton1{
+    
 }

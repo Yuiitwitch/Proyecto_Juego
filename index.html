@@ -20,37 +20,37 @@
     <!-- PANTALLA2 -->
     <section class="novis" id="fase2" style="display:none">
         <div class="centrar">
-                <div class="hsin">
-                    <div class="cara"><img onclick='chooseHourse("1")' alt="" src="img/caballo.jpg">
+            <div class="hsin">
+                <div class="cara"><img onclick='chooseHourse("1")' alt="" src="img/caballo.jpg">
                     <div class="namehourse">Rayo</div>
                 </div>
-                    <div class="cara"><img onclick='chooseHourse("2")' alt="" src="img/caballo.jpg">
+                <div class="cara"><img onclick='chooseHourse("2")' alt="" src="img/caballo.jpg">
                     <div class="namehourse">Veloz</div>
                 </div>
-                    <div class="cara"><img onclick='chooseHourse("3")' alt="" src="img/caballo.jpg">
+                <div class="cara"><img onclick='chooseHourse("3")' alt="" src="img/caballo.jpg">
                     <div class="namehourse">Pecoso</div>
                 </div>
-                    <div class="cara"><img onclick='chooseHourse("4")' alt="" src="img/caballo.jpg">
+                <div class="cara"><img onclick='chooseHourse("4")' alt="" src="img/caballo.jpg">
                     <div class="namehourse">Happy</div>
                 </div>
-                </div>
-                <div class="h1message"><br><br> -SELECT YOUR HOURSE-</div>
-                <div onclick='organizer("fase3")' class="epartida" id="spartida" style="display:none">EMPEZAR PARTIDA</div>
             </div>
+            <div class="h1message"><br><br> -SELECT YOUR HOURSE-</div>
+            <div onclick='organizer("fase3")' class="epartida" id="spartida" style="display:none">EMPEZAR PARTIDA</div>
+        </div>
         </div>
         <!-- PANTALLA 3 -->
     </section>
     <section class="novis1" id="fase3" style="display:none">
-        <div><img src="img/caballo.jpg"/>
-        <div>Player1</div>
+        <div class="gplayers">
+            <div><img class="player1" src="img/caballo.jpg">
+                <div class="p1t">Player1</div>
+            </div>
+            <div><img class="player2" src="img/caballo.jpg" />
+                <div class="p2t">Player2</div>
+            </div>
         </div>
-        
-        <div><img src="img/caballo.jpg"/>
-        <div>Player2</div>
         </div>
-        <div><button id="boton">GO!</button></div>
-        
-
+        <div class="boton1"><button id="carrera">GO!</button></div>
     </section>
     <section class="novis2" id="fase4" style="display:none">
         <div><img onClick='organizer("1")' alt="coch5" src="img/coche5.png" /></div>
