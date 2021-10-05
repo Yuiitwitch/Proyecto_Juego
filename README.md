@@ -1,7 +1,7 @@
 # Proyecto_Juego
 
 ![image](https://user-images.githubusercontent.com/86298325/136006204-92661be1-7549-4f67-8199-9e1f2fd6b31c.png)
- Proyecto Juego - "Carrera de Caballo" -
+ Proyecto Juego - "Carrera de Caballos" -
  
  Hemos realizado un juego de carrera de caballos , utilizando html - CSS y Javascript.
  
