@@ -14,12 +14,17 @@ body{
        align-items: center;
 }
 /*PANTALLA 2 */
+.novis{
+    background-image: url("img/fondo_horse.jpg");
+    height: 100vh;
+}
 .hsin{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .cara{
+    margin: 25px;
     border-radius: 15px;
     border: 2px solid black;
 }
@@ -40,9 +45,6 @@ body{
     display:flex;
     justify-content: center;
 }
-.player1{
-    
-}
 .p1t{
      text-align: center;
      font-size: 50px;
@@ -50,7 +52,4 @@ body{
 .p2t{
     text-align: center;
     font-size: 50px;
-}
-.boton1{
-    
 }
