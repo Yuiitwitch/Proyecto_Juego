@@ -9,52 +9,67 @@ class gameHourse{
     this.distance= 0;
     }
 //metodos    
-    getDistance(metros) {
+    setDistance(metros) {
         this.distance += metros;
 
     }
+    getDistance(){
+    }
 }
 
-let hourse1 = new gameHourse ("Rayo",100,30);
-let hourse2 = new gameHourse ("Veloz",100,30);
-let hourse3 = new gameHourse ("Pecoso",100,30);
-let hourse4 = new gameHourse ("Happy",100,30);
+let horse1 = new gameHourse ("Rayo",100,30);
+let horse2 = new gameHourse ("Veloz",100,30);
+let horse3 = new gameHourse ("Pecoso",100,30);
+let horse4 = new gameHourse ("Happy",100,30);
 
 let players = [];
 
 //traducdor
 let traductor = {
-"1": hourse1,
-"2": hourse2,
-"3": hourse3,
-"4": hourse4
+"1": horse1,
+"2": horse2,
+"3": horse3,
+"4": horse4
 }
 
 
 //Crear una funcionalidad al boton cuando pinchamos en el caballo lo meta en la variable uno.
 
+let arrayHourse = [];
 const chooseHourse = (caballo) => {
     
-  
-  if(players.length <2){
-    players.push(traductor[caballo]);
-  }
- console.log(players[0].nombre);
- 
-  if(players.length ==2){
-    document.getElementById("spartida").style.display = "block";
-}
+  arrayHourse[i] = caballo;
+  document.getElementById("spartida" + i).style.display = "block";
+  indice++;
+  go();
   }
 
 //juego//
 
-let carrera = 1000;
-let partida= "";
-let player1 = "";
-let player2 = "";
-let win = "Has ganado!";
-let metros= "";
 
+let carrera = 1000;
+let player1 = 0;
+let player2 = 0;
+
+
+
+const go = () =>{
+  if (i==2) {
+
+    organizer("fase4");
+
+    player1 += Math.random() * (100 - 50) + 50;
+    player2 += Math.random() * (100 - 50) + 50;
+    
+    if (player1 >= carrera || player2 >= carrera) {
+      document.getElementById("carrera").style.display ="block";
+      clearInterval(carrera);
+    }
+    if (player1>player2) {
+      document.getElementById("")
+    }
+  }
+}
 
 organizer = (caballo) => {
     let fasewant = "fase" + caballo;

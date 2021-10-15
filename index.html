@@ -18,20 +18,20 @@
         </div>
     </section>
     <!-- PANTALLA2 -->
-    <section class="novis" id="fase2" style="display:none">
+    <section class="novis" id="fase2" style="display:none" src="/img/fondo_horse.jpg">
         <div class="centrar">
             <div class="hsin">
                 <div class="cara"><img onclick='chooseHourse("1")' alt="" src="img/caballo1.jpg">
-                    <div class="namehourse">Rayo</div>
+                    <div class="namehorse">Rayo</div>
                 </div>
                 <div class="cara"><img onclick='chooseHourse("2")' alt="" src="img/caballo3.jpg">
-                    <div class="namehourse">Veloz</div>
+                    <div class="namehorse">Veloz</div>
                 </div>
                 <div class="cara"><img onclick='chooseHourse("3")' alt="" src="img/caballo4.jpg">
-                    <div class="namehourse">Pecoso</div>
+                    <div class="namehorse">Pecoso</div>
                 </div>
                 <div class="cara"><img onclick='chooseHourse("4")' alt="" src="img/caballo2.jpg">
-                    <div class="namehourse">Happy</div>
+                    <div class="namehorse">Happy</div>
                 </div>
             </div>
             <div class="h1message"><br><br> -SELECT YOUR HOURSE-</div>
@@ -42,21 +42,37 @@
     </section>
     <section class="novis1" id="fase3" style="display:none">
         <div class="gplayers">
-            <div><img class="player1" src="img/caballo.jpg">
+            <div><img class="player1" src="" id="ph1">
                 <div class="p1t">Player1</div>
             </div>
-            <div><img class="player2" src="img/caballo.jpg" />
+            <div><img class="player2" src="" id="ph2" />
                 <div class="p2t">Player2</div>
+            </div>
+            <div class="distance">
+                <div id="distanceh1">Mts:</div>
+                <div id="distanceh2">Mts:</div>
             </div>
         </div>
         </div>
         <div class="boton1"><button id="carrera">GO!</button></div>
     </section>
-    <section class="novis2" id="fase4" style="display:none">
-        <div><img onClick='organizer("1")' alt="coch5" src="img/coche5.png" /></div>
-    </section>
+    <!-- PANTALLA 4 -->
 
-    <script src="js/main.js"></script>
+    <section class="novis2" id="fase4" style="display:none">
+        <div><img  src="" /></div>
+    <div class="winner">
+        THE WINNER IS:
+    </div>
+    <div class="hwinner">
+        <img class="pic" id="hwin" src=""/>
+    </div>
+    <div>
+        <button id="restart" type="button" onclick='organizer("1")'>RESTART</button>
+    </div>
+        </section>
+
+
+        <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,6 @@ body{
 }
 /*PANTALLA 2 */
 .novis{
-    background-image: url("img/fondo_horse.jpg");
     height: 100vh;
 }
 .hsin{
@@ -28,7 +27,7 @@ body{
     border-radius: 15px;
     border: 2px solid black;
 }
-.namehourse{
+.namehorse{
     font-size: 30px;
     text-align: center;
 }
