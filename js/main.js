@@ -143,10 +143,11 @@ const final = () => {
     </div>
     <div class="hwinner">
     </div>
-    <div>
-        <button id="restart" type="button" onclick=organizer("1")'>RESTART</button>
-    </div>
     `;
+}
+//funcion restart
+const restart = () => {
+ organizer("1");
 }
 
 
