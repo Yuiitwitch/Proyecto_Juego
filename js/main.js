@@ -21,7 +21,8 @@ let hourse2 = new gameHourse("Veloz", 100, 30);
 let hourse3 = new gameHourse("Pecoso", 100, 30);
 let hourse4 = new gameHourse("Happy", 100, 30);
 
-let players = [];
+let player1 = "";
+let player2 = "";
 
 //traducdor
 let traductor = {
@@ -37,32 +38,38 @@ let traductor = {
 const chooseHorse = (caballo) => {
 
 
-  for (let index = 0; index < 2; index++) {
-    players.push(traductor[caballo]);
-    console.log(caballo);
-    document.querySelector('#' + caballo).classList.add("trans")
+  if (player1 != "") {
+    player2= traductor[caballo];
+    console.log(player2);
+    document.querySelector('#' + caballo).classList.add("trans");
   }
+  else{
+    player1 = traductor[caballo];
+    console.log(player1);
+    document.querySelector('#' + caballo).classList.add("trans");
+  }
+  if (player1 != "" && player2 != "") {
+
+    document.getElementById("spartida").style.display = "block";
+  }
+}
   // if (players == null{
   //   players = traductor[caballo]
   // }
 
+//   if(player1 != ""){
+//     players = traductor[caballo];
+//     chooseHorse()
 
-  if (players.length > 3) {
-    document.getElementById("spartida").style.display = "block";
-  }
-  if(player1 != ""){
-    players = traductor[caballo];
-    chooseHorse()
+//     setTimeout(() =>{
+//         organizer("3")
+//         jugadores();
 
-    setTimeout(() =>{
-        organizer("3")
-        jugadores();
+//     }, 1000);
+//   }
+// }
 
-    }, 1000);
-  }
-}
-
-//funcion mostrar jugadores
+funcion mostrar jugadores
 const hplayers = () => {
   document.getElementById("race").innerHTML =
     `
@@ -81,45 +88,45 @@ const hplayers = () => {
 <div class="boton1" id="carrera" onclick="acelerar()"><button>GO!</button></div> 
   `;
 }
-//juego//
+juego//
 
 
-let carrera = 1000;
-let partida = "";
-let player1 = "";
-let player2 = "";
+// let carrera = 1000;
+// let partida = "";
+// let player1 = "";
+// let player2 = "";
 
-const acelerar1 = () => {
+// const acelerar1 = () => {
 
-  let random = Math.floor(Math.random() * (25 - 10) + 10);
-  player1.distancia += parseInt((random * player1.distancia))
+//   let random = Math.floor(Math.random() * (25 - 10) + 10);
+//   player1.distance += parseInt((random * player1.distance))
 
-  console.log(player1.distancia);
-  document.getElementById("distanceh1").style.botton = player1.distancia / 20 + "em";
-}
-const acelerar2 = () => {
+//   console.log(player1.distance);
+//   document.getElementById("distanceh1").style.botton = player1.distance / 20 + "em";
+// }
+// const acelerar2 = () => {
 
-  let random = Math.floor(Math.random() * (25 - 10) + 10);
-  player2.distancia += parseInt((random * player2.distancia))
+//   let random = Math.floor(Math.random() * (25 - 10) + 10);
+//   player2.distance += parseInt((random * player2.distance))
 
-  console.log(player2.distancia);
-  document.getElementById("distanceh2").style.botton = player2.distancia / 20 + "em";
-}
-
-
-
+//   console.log(player2.distance);
+//   document.getElementById("distanceh2").style.botton = player2.distance / 20 + "em";
+// }
 
 
 
 
 
-organizer = (caballo) => {
-  let fasewant = "fase" + caballo;
+
+
+
+organizer = (num) => {
+  let fasewant = "fase" + num;
 
   let arrFases = ["fase1", "fase2", "fase3", "fase4"];
-  arrFases = arrFases.filter(val => !caballo.includes(val));
+  arrFases = arrFases.filter(val => !fasewant.includes(val));
 
-  document.getElementById(caballo).style.display = "block";
+  document.getElementById(fasewant).style.display = "block";
 
   for (let _f of arrFases) {
     document.getElementById(_f).style.display = "none";

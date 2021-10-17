@@ -16,6 +16,8 @@ body{
 /*PANTALLA 2 */
 .novis{
     height: 100vh;
+    background-image: url(../img/fondo_horse.jpg);
+    background-size: cover;
 }
 .hsin{
     display:flex;
