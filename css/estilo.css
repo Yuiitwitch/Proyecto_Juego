@@ -52,3 +52,6 @@ body{
     text-align: center;
     font-size: 50px;
 }
+.trans{
+    filter: grayscale(100%)
+}
