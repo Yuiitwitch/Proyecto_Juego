@@ -23,11 +23,11 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    color: yellow
 }
 .cara{
     margin: 25px;
     border-radius: 15px;
-    border: 2px solid black;
 }
 .namehorse{
     font-size: 30px;
@@ -36,15 +36,62 @@ body{
 .h1message{
     font-size: 40px;
     text-align: center;
+    color: yellow;
 }
+/* //EMPEZAR PARTIDA */
 .epartida{
     text-align: center;
     font-size: 40px;
+    color:yellow;
 }
+
 /* PANTALLA 3 */
 .gplayers{
     height: 100vh;
+    background-image: url(../img/carrera.jpg);
+    background-size: cover;
     justify-content: center;
+}
+.p3h{
+    margin-left: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+/* //NOMBRES CABALLOS */
+.nombresp3h{
+    justify-content: center;
+    margin: 25px;
+    display:flex;
+    font-size: 50px;
+    color: yellow;
+}
+.p1t{
+    margin-right: 225px;
+}
+.metrosrecorridos{
+    display :flex;
+    justify-content: center;
+    font-size: 50px;
+    color:yellow
+}
+.boton1{
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+.metro1{
+    margin-right: 200px;
+}
+.player1{
+    border-radius: 15px;
+    margin-right: 100px;
+}
+.player2{
+    border-radius: 15px;
+}
+.p2t{
+
 }
 .trans{
     filter: grayscale(100%)
