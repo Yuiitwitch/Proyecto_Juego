@@ -24,7 +24,7 @@
                 <div class="cara"><img id="rayo" onclick='chooseHorse("rayo")' alt="" src="img/rayo.jpg">
                     <div class="namehorse">Rayo</div>
                 </div>
-                <div class="cara"><img  id="veloz" onclick='chooseHorse("veloz")' alt="" src="img/veloz.jpg">
+                <div class="cara"><img id="veloz" onclick='chooseHorse("veloz")' alt="" src="img/veloz.jpg">
                     <div class="namehorse">Veloz</div>
                 </div>
                 <div class="cara"><img id="pecoso" onclick='chooseHorse("pecoso")' alt="" src="img/pecoso.jpg">
@@ -42,24 +42,16 @@
     </section>
     <section class="novis1" id="fase3" style="display:none">
         <div class="gplayers" id="race">
+        <div onclick='organizer()'></div>
     </section>
     <!-- PANTALLA 4 -->
 
     <section class="novis2" id="fase4" style="display:none">
-        <div><img  src="" /></div>
-    <div class="winner">
-        THE WINNER IS:
-    </div>
-    <div class="hwinner">
-        <img class="pic" id="hwin" src=""/>
-    </div>
-    <div>
-        <button id="restart" type="button" onclick='organizer("1")'>RESTART</button>
-    </div>
-        </section>
+        <div class="fg" id="campeon"></div>
+    </section>
 
 
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

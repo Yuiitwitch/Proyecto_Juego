@@ -43,16 +43,8 @@ body{
 }
 /* PANTALLA 3 */
 .gplayers{
-    display:flex;
+    height: 100vh;
     justify-content: center;
-}
-.p1t{
-     text-align: center;
-     font-size: 50px;
-}
-.p2t{
-    text-align: center;
-    font-size: 50px;
 }
 .trans{
     filter: grayscale(100%)
