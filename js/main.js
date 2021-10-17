@@ -24,6 +24,10 @@ let hourse4 = new gameHourse("Happy", 100, 30);
 let player1 = "";
 let player2 = "";
 
+let carrera = 1000;
+let partida = "";
+let ganador = "";
+
 //traducdor
 let traductor = {
   "rayo": hourse1,
@@ -39,11 +43,11 @@ const chooseHorse = (caballo) => {
 
 
   if (player1 != "") {
-    player2= traductor[caballo];
+    player2 = traductor[caballo];
     console.log(player2);
     document.querySelector('#' + caballo).classList.add("trans");
   }
-  else{
+  else {
     player1 = traductor[caballo];
     console.log(player1);
     document.querySelector('#' + caballo).classList.add("trans");
@@ -53,65 +57,54 @@ const chooseHorse = (caballo) => {
     document.getElementById("spartida").style.display = "block";
   }
 }
-  // if (players == null{
-  //   players = traductor[caballo]
-  // }
 
-//   if(player1 != ""){
-//     players = traductor[caballo];
-//     chooseHorse()
 
-//     setTimeout(() =>{
-//         organizer("3")
-//         jugadores();
-
-//     }, 1000);
-//   }
-// }
-
-funcion mostrar jugadores
+// funcion mostrar jugadores
 const hplayers = () => {
+  organizer("3");
   document.getElementById("race").innerHTML =
     `
-  <div><img class="player1" src="img/${players.nombre}.jpg" id="ph1"/>
+  <div><img class="player1" src="../img/${player1.nombre}.jpg" id="ph1"/>
   <div class="p1t">Player1</div>
 </div>
-<div><img class="player2" src="img/${players.nombre}.jpg" id="ph2"/>
+<div><img class="player2" src="img/${player2.nombre}.jpg" id="ph2"/>
   <div class="p2t">Player2</div>
 </div>
 <div class="distance">
-  <div id="distanceh1">Mts:${players.distance}</div>
-  <div id="distanceh2">Mts:${players.distance}</div>
+  <div id="distanceh1">Mts:${player1.distance}</div>
+  <div id="distanceh2">Mts:${player2.distance}</div>
 </div>
 </div>
 </div>
 <div class="boton1" id="carrera" onclick="acelerar()"><button>GO!</button></div> 
   `;
 }
-juego//
+// juego
 
+const acelerar1 = () => {
+  let random = Math.floor(Math.random() * (100 - 10) + 10);
+  player1.distance = parseInt((random + player1.distance))
 
-// let carrera = 1000;
-// let partida = "";
-// let player1 = "";
-// let player2 = "";
+  console.log(player1.distance);
+  document.getElementById("distanceh1").style.botton = `${player1.distance}`
+}
+const acelerar2 = () => {
 
-// const acelerar1 = () => {
+  let random = Math.floor(Math.random() * (100 - 10) + 10);
+  player2.distance = parseInt((random + player2.distance))
 
-//   let random = Math.floor(Math.random() * (25 - 10) + 10);
-//   player1.distance += parseInt((random * player1.distance))
+  console.log(player2.distance);
+  document.getElementById("distanceh2").style.botton = `${player2.distance}`
+}
+const acelerar = () => {
+  acelerar1();
+  acelerar2();
+}
 
-//   console.log(player1.distance);
-//   document.getElementById("distanceh1").style.botton = player1.distance / 20 + "em";
-// }
-// const acelerar2 = () => {
-
-//   let random = Math.floor(Math.random() * (25 - 10) + 10);
-//   player2.distance += parseInt((random * player2.distance))
-
-//   console.log(player2.distance);
-//   document.getElementById("distanceh2").style.botton = player2.distance / 20 + "em";
-// }
+const comprar = () => {
+  
+  if()
+}
 
 
 
