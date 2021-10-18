@@ -35,5 +35,7 @@ Damos comiendo la carrera! Pulsa tantas veces necesites el boton de GO! hasta qu
 
 Fase 4.
 Visualizamos el ganador de la partida! ENHORABUENA!
+![image](https://user-images.githubusercontent.com/86298325/137691956-f67da006-81c8-4dcf-9d29-b3816ee3c64b.png)
+
 
 
