@@ -75,7 +75,7 @@ const hplayers = () => {
   <div  class="metro1" id="distanceh1">${player1.distance}</div>
   <div  class="metro2" id="distanceh2">${player2.distance}</div>
 </div>
-<div class="boton1" id="carrera" onclick="acelerar()"><button>GO!</button></div> 
+<div class="boton1"  id="carrera" onclick="acelerar()"><button>GO!</button></div> 
   `;
 }
 // juego
@@ -137,11 +137,16 @@ const comparar = () => {
 const final = () => {
   document.getElementById("campeon").innerHTML =
     `
+    <div class="fondoganador">
     <div class="winner">
-       <h1>THE WINNER IS:</h1>
-    <div></div>    
+       <h1 class="tituloganador">THE WINNER IS:</h1>
+    <div class="imagenganador"><img src="../img/${ganador.nombre}.jpg"/></div>    
     </div>
     <div class="hwinner">
+    <div class="botonrestart">
+            <button id="restart" type="button" onclick=restart()>RESTART</button>
+        </div>
+    </div>
     </div>
     `;
 }

@@ -53,7 +53,7 @@ body{
 /* PANTALLA 3 */
 .gplayers{
     height: 100vh;
-    background-image: url(../img/carrera.jpg);
+    background-image: url(../img/carrera.caballos2.jpg);
     background-size: cover;
     justify-content: center;
 }
@@ -74,6 +74,7 @@ body{
 .p1t{
     margin-right: 225px;
 }
+/* //METROS RECORRIDOS */
 .metrosrecorridos{
     display :flex;
     justify-content: center;
@@ -100,4 +101,28 @@ body{
 }
 .trans{
     filter: grayscale(100%)
+}
+/* //PANTALLA 4 */
+.fondoganador{
+    height: 100vh;
+    background-image: url(../img/ganador.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+.tituloganador{
+    padding: 20vh;
+    display:flex;
+    justify-content: center;
+    color: gold;
+}
+.imagenganador{
+    display:flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+.botonrestart{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+
 }
