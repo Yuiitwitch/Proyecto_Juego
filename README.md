@@ -38,4 +38,7 @@ Visualizamos el ganador de la partida! ENHORABUENA!
 ![image](https://user-images.githubusercontent.com/86298325/137691956-f67da006-81c8-4dcf-9d29-b3816ee3c64b.png)
 
 
-
+TECNOLOGIAS UTILIZADAS.
+HTML : Para crear la estructura del juego
+CSS : Damos estilo a las escenas
+Javascript : realización del cambio de pantalla y funcion del juego y la carrera.
