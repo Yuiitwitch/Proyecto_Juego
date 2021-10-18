@@ -97,6 +97,8 @@ const acelerar2 = () => {
   document.getElementById("carrera").style.botton = `${player2.distance}`
   document.getElementById("distanceh2").innerHTML = `P2:${player2.distance}`;
 }
+
+//funcion para que los caballos puedan correr a la vez.
 const acelerar = () => {
   acelerar1();
   acelerar2();
@@ -113,7 +115,14 @@ const comparar = () => {
     if (player1.distance > player2.distance && player2.distance < player1.distance) {
       console.log(`THE WINNER IS ${player1.nombre}`);
 
+      setTimeout(() =>{
+        organizer("4");
+        final();
+      }, 1000);
+
+      ganador=player1;
       ganador.innerHTML = `El ganador es ${player1.nombre} !!!!`;
+      console.log(ganador)
 
     } else {
       console.log(`THE WINNER IS ${player2.nombre}`)
@@ -125,7 +134,9 @@ const comparar = () => {
 
       }, 1000);
 
+      ganador=player2;
       ganador.innerHTML = `El ganador es ${player2.nombre} !!!!`;
+      console.log(ganador)
 
     }
   }
@@ -140,7 +151,8 @@ const final = () => {
     <div class="fondoganador">
     <div class="winner">
        <h1 class="tituloganador">THE WINNER IS:</h1>
-    <div class="imagenganador"><img src="../img/${ganador.nombre}.jpg"/></div>    
+    <div class="imagenganador"><img src="../img/${ganador.nombre}.jpg"/></div>
+    <div class="nombreganador">${ganador.nombre}</div>  
     </div>
     <div class="hwinner">
     <div class="botonrestart">

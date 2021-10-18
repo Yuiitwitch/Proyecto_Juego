@@ -110,7 +110,7 @@ body{
     justify-content: center;
 }
 .tituloganador{
-    padding: 20vh;
+    font-size: 50px;
     display:flex;
     justify-content: center;
     color: gold;
@@ -121,8 +121,14 @@ body{
     border-radius: 15px;
 }
 .botonrestart{
+    padding-top : 100px;
     display: flex;
     justify-content: center;
-    padding-top: 300px;
 
+}
+.nombreganador{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    color: gold;
 }
