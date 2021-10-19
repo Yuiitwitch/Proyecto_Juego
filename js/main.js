@@ -168,7 +168,8 @@ const restart = () => {
   player2.distance = 0;
   player1.metros = 0;
   player2.metros = 0;
-  
+  window.location.reload(true);
+
 }
 
 
