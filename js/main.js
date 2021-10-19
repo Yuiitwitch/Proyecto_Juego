@@ -25,7 +25,6 @@ let player1 = "";
 let player2 = "";
 let ganador = "";
 let metros = 1000;
-let partida = "";
 
 //traducdor
 let traductor = {
@@ -115,12 +114,12 @@ const comparar = () => {
     if (player1.distance > player2.distance && player2.distance < player1.distance) {
       console.log(`THE WINNER IS ${player1.nombre}`);
 
-      setTimeout(() =>{
+      setTimeout(() => {
         organizer("4");
         final();
       }, 1000);
 
-      ganador=player1;
+      ganador = player1;
       ganador.innerHTML = `El ganador es ${player1.nombre} !!!!`;
       console.log(ganador)
 
@@ -134,7 +133,7 @@ const comparar = () => {
 
       }, 1000);
 
-      ganador=player2;
+      ganador = player2;
       ganador.innerHTML = `El ganador es ${player2.nombre} !!!!`;
       console.log(ganador)
 
@@ -164,7 +163,12 @@ const final = () => {
 }
 //funcion restart
 const restart = () => {
- organizer("1");
+  organizer("1");
+  player1.distance = 0;
+  player2.distance = 0;
+  player1.metros = 0;
+  player2.metros = 0;
+  
 }
 
 
