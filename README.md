@@ -13,13 +13,13 @@
 
 FUTURAS IMPLEMENTACIONES:
 - Generación de la carrera entre los 2 caballos. √
-- La pantalla de la ultima fase dodne se visualiza al ganador
+- La pantalla de la ultima fase dodne se visualiza al ganador √
 - Retoque de css y fotografia de los caballos. √
 - Realizar el juego responsive.
 
 Fase 1.
 Visualizamos la pantalla de incio del juego , en la que realizando un click en la pantalla nos pasa a la fase2.
-![image](https://user-images.githubusercontent.com/86298325/137645284-651be0aa-3e83-44c4-888a-2932bfaa191c.png)
+![image](https://user-images.githubusercontent.com/86298325/137691639-f44778eb-f8d4-4f91-a5ef-3af14baa53ad.png)
 
 Fase 2. 
 En este fase podremos seleccionar los 4 caballos disponibles en el juego. 
@@ -31,9 +31,14 @@ Una vez seleccionado los 2 personajes , nos aparecera un boton de "EMPEZAR PARTI
 
 Fase3.
 Damos comiendo la carrera! Pulsa tantas veces necesites el boton de GO! hasta que los caballos recorran la distancia de 1000m.
-![image](https://user-images.githubusercontent.com/86298325/137645392-8307e2e6-2bd0-41e1-a9b7-c8f71c825042.png)
+![image](https://user-images.githubusercontent.com/86298325/137691770-2d429c9c-df77-46ba-982c-c368fd8463ca.png)
 
 Fase 4.
 Visualizamos el ganador de la partida! ENHORABUENA!
+![image](https://user-images.githubusercontent.com/86298325/137691956-f67da006-81c8-4dcf-9d29-b3816ee3c64b.png)
 
 
+TECNOLOGIAS UTILIZADAS.
+HTML : Para crear la estructura del juego
+CSS : Damos estilo a las escenas
+Javascript : realización del cambio de pantalla y funcion del juego y la carrera.
