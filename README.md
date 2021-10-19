@@ -42,3 +42,7 @@ TECNOLOGIAS UTILIZADAS.
 HTML : Para crear la estructura del juego
 CSS : Damos estilo a las escenas
 Javascript : realización del cambio de pantalla y funcion del juego y la carrera.
+
+
+Author : ALfonso Lara 
+Version : 1.0
