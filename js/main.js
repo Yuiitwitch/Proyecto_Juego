@@ -1,7 +1,7 @@
 //AUTHOR : Alfonso Lara
 //version 1.0
 
-class gameHourse {
+class gameHorse {
   constructor(nombre, aceleracion) {
     this.nombre = nombre;
     this.aceleracion = aceleracion;
@@ -16,10 +16,10 @@ class gameHourse {
   }
 }
 
-let hourse1 = new gameHourse("Rayo", 100, 30);
-let hourse2 = new gameHourse("Veloz", 100, 30);
-let hourse3 = new gameHourse("Pecoso", 100, 30);
-let hourse4 = new gameHourse("Happy", 100, 30);
+let horse1 = new gameHourse("Rayo", 100, 30);
+let horse2 = new gameHourse("Veloz", 100, 30);
+let horse3 = new gameHourse("Pecoso", 100, 30);
+let horse4 = new gameHourse("Happy", 100, 30);
 
 let player1 = "";
 let player2 = "";
@@ -28,10 +28,10 @@ let metros = 1000;
 
 //traducdor
 let traductor = {
-  "rayo": hourse1,
-  "veloz": hourse2,
-  "pecoso": hourse3,
-  "happy": hourse4
+  "rayo": horse1,
+  "veloz": horse2,
+  "pecoso": horse3,
+  "happy": horse4
 }
 
 
@@ -63,8 +63,8 @@ const hplayers = () => {
   document.getElementById("race").innerHTML =
     `
 <div class="p3h">
-  <div><img class="player1" src="./img/${player1.nombre}" id="ph1"/></div> 
-  <div><img class="player2" src="./img/${player2.nombre}" id="ph2"/></div>
+  <div><img class="player1" src='img/${player1.nombre}' id="ph1"/></div> 
+  <div><img class="player2" src="img/${player2.nombre}' id="ph2"/></div>
 </div>
 <div class="nombresp3h">
 <div class="p1t">${player1.nombre}</div>
@@ -150,7 +150,7 @@ const final = () => {
     <div class="fondoganador">
     <div class="winner">
        <h1 class="tituloganador">THE WINNER IS:</h1>
-    <div class="imagenganador"><img src="../img/${ganador.nombre}.jpg"/></div>
+    <div class="imagenganador"><img src='img/${ganador.nombre}.jpg'/></div>
     <div class="nombreganador">${ganador.nombre}</div>  
     </div>
     <div class="hwinner">
