@@ -63,8 +63,8 @@ const hplayers = () => {
   document.getElementById("race").innerHTML =
     `
 <div class="p3h">
-  <div><img class="player1" src="./img/${player1.nombre}.jpg" id="ph1"/></div> 
-  <div><img class="player2" src="./img/${player2.nombre}.jpg" id="ph2"/></div>
+  <div><img class="player1" src="/img/${player1.nombre}.jpg" id="ph1"/></div> 
+  <div><img class="player2" src="/img/${player2.nombre}.jpg" id="ph2"/></div>
 </div>
 <div class="nombresp3h">
 <div class="p1t">${player1.nombre}</div>
