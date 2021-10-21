@@ -16,10 +16,10 @@ class gameHorse {
   }
 }
 
-let horse1 = new gameHourse("Rayo", 100, 30);
-let horse2 = new gameHourse("Veloz", 100, 30);
-let horse3 = new gameHourse("Pecoso", 100, 30);
-let horse4 = new gameHourse("Happy", 100, 30);
+let horse1 = new gameHorse("Rayo", 100, 30);
+let horse2 = new gameHorse("Veloz", 100, 30);
+let horse3 = new gameHorse("Pecoso", 100, 30);
+let horse4 = new gameHorse("Happy", 100, 30);
 
 let player1 = "";
 let player2 = "";
@@ -150,7 +150,7 @@ const final = () => {
     <div class="fondoganador">
     <div class="winner">
        <h1 class="tituloganador">THE WINNER IS:</h1>
-    <div class="imagenganador"><img src='img/${ganador.nombre}.jpg'/></div>
+    <div class="imagenganador"><img src='./img/${ganador.nombre}'/></div>
     <div class="nombreganador">${ganador.nombre}</div>  
     </div>
     <div class="hwinner">
