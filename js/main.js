@@ -16,10 +16,10 @@ class gameHorse {
   }
 }
 
-let horse1 = new gameHorse("Rayo", 100, 30);
-let horse2 = new gameHorse("Veloz", 100, 30);
-let horse3 = new gameHorse("Pecoso", 100, 30);
-let horse4 = new gameHorse("Happy", 100, 30);
+let horse1 = new gameHorse("rayo", 100, 30);
+let horse2 = new gameHorse("reloz", 100, 30);
+let horse3 = new gameHorse("pecoso", 100, 30);
+let horse4 = new gameHorse("happy", 100, 30);
 
 let player1 = "";
 let player2 = "";
